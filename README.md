@@ -39,3 +39,4 @@ Two independent paths — use either or both.
 - Mario Zechner — [Building pi in a World of Slop](https://www.youtube.com/watch?v=RjfbvDXpFls)
 - Lucas Meijer — [A Love Letter to Pi](https://www.youtube.com/watch?v=fdbXNWkpPMY)
 - [pi-mono](https://github.com/badlogic/pi-mono)
+- Bug/feature prompt templates adapted from [this pi-mono session log](https://huggingface.co/datasets/badlogicgames/pi-mono/blob/main/2026-01-16T10-50-40-927Z_13d61130-4ac2-41a7-8bf4-cdc1479cc5df.jsonl)
