@@ -68,6 +68,11 @@ actual complexity — do not invent structure it doesn't need.
    lint/typecheck feedback loop is what lets an agent catch its own
    mistakes.
 
+   If no check command exists or can be composed, leave the `AGENTS.md`
+   placeholder as `<<check command>>` and flag it in the summary. If an
+   existing check is weak (e.g. tests only, no typecheck/lint), don't
+   silently change it — suggest improvements in the summary.
+
 ## Final summary
 
 When done, print:
