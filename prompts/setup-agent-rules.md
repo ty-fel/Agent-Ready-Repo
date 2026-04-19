@@ -61,6 +61,13 @@ actual complexity — do not invent structure it doesn't need.
    `npm run check`) that composes them. Skip if one already exists. Do not
    change the underlying scripts.
 
+   If the repo has **no** linter, formatter, or type checker configured,
+   do not install one yourself. Flag it in the final summary and suggest
+   the idiomatic choice for the stack (e.g. ruff + mypy for Python,
+   eslint + prettier + tsc for TS) so the human can opt in. A tight
+   lint/typecheck feedback loop is what lets an agent catch its own
+   mistakes.
+
 ## Final summary
 
 When done, print:
