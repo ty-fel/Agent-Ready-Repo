@@ -15,7 +15,8 @@ actual complexity — do not invent structure it doesn't need.
 - Never overwrite a non-empty `README.md` or `AGENTS.md` without showing a
   diff first. Extend rather than rewrite when they look maintained.
 - Prefer linking over duplicating: `AGENTS.md` points at `README.md`, not a
-  copy of it.
+  copy of it. Anything useful to both humans and agents (commands,
+  conventions, repo layout) belongs in `README.md`.
 - Default to `README.md` + `AGENTS.md` only. Do not create `docs/`,
   `examples/`, or empty topic-doc stubs. If the repo is complex enough that
   `docs/` would clearly help, or it's a library/SDK where `examples/` would
@@ -31,21 +32,26 @@ actual complexity — do not invent structure it doesn't need.
    `CLAUDE.md` already present, and whether a `CHANGELOG.md` exists.
 
 2. **README scaffold.** If `README.md` is missing or thin, create/extend it
-   with: project name, one-line description (from the manifest), a
-   repo-layout tree, and a quick-start listing the install / test / lint
-   commands from step 1. Do not invent commands.
-
-3. **Extend `AGENTS.md`** with:
-   - *Commands* — the ones you found in step 1 (build, check, test, lint).
-     Be specific: exact invocation, when to run it.
+   with content useful to humans *and* agents:
+   - Project name + one-line description (from the manifest).
+   - *Structure* — repo-layout tree with a short note per top-level entry.
+   - *Quick start* — exact install / test / lint / format / build commands
+     from step 1. Do not invent commands.
    - *Conventions* — patterns visible in existing code (test file naming,
      import style, formatter config, error handling shape). Only include
-     ones you can point at a concrete example for.
-   - *Where to look* — short pointers into `README.md` and any existing
-     `docs/`.
+     ones you can point at a concrete example for. Skip if nothing clear.
+
+3. **Extend `AGENTS.md`** with only the agent-specific bits:
+   - Placeholder rules: `<<...>>` you may fill in. `<...>` you must not
+     touch — those are human-only.
+   - Replace `<<check command>>` with the actual command from step 4 (or
+     an existing one). Leave it as `<<check command>>` only if no check
+     command exists and none can be composed.
    - *Changelog* — only if a `CHANGELOG.md` already exists. Add a short
      block: location, "new entries go under `## [Unreleased]`", "never
      modify released version sections."
+   - Do **not** duplicate commands, conventions, or repo layout from
+     `README.md`. If an agent needs them, it can read the README.
 
    Keep it short, imperative, bulleted. No prose paragraphs. No empty
    section headers.

@@ -12,7 +12,7 @@
 - <Add rules here as they come up in review sessions>
 
 ## Commands
-- After code changes, run: <check command>
+- After code changes, run: <<check command>>
 - NEVER run: <long-running / destructive commands>
 - If you create or modify a test file, run it, identify issues in either the test or implementation, and iterate until it passes
 

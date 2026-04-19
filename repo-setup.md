@@ -17,6 +17,11 @@ Copy the [template](./AGENTS.md.template) into `AGENTS.md` and then prune it bas
 cp AGENTS.md.template AGENTS.md
 ```
 
+Placeholder convention:
+
+- `<...>` — fill in or delete. The agent will not touch these.
+- `<<...>>` — fill in if you want, or leave for `/setup-agent-rules` to populate in step 2.
+
 ### 2. Run `/setup-agent-rules` (agent)
 
 Invoke [`/setup-agent-rules`](./prompts/setup-agent-rules.md) in a
