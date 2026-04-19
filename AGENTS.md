@@ -1,0 +1,3 @@
+- Keep it concise. Short, imperative, bulleted.
+- Avoid overengineering. Cut anything not earning its place.
+- Keep content general — nothing repo-specific.
