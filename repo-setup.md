@@ -11,40 +11,11 @@ write code against. Most application repos need neither.
 
 ### 1. Seed `AGENTS.md` (human, ~5 min)
 
-Create `AGENTS.md` at the repo root. Keep it short, imperative, specific to
-this repo — not generic advice. Example shape:
+Copy the template into `AGENTS.md` and then prune it based on the needs and complexity of your repository. Keep it short, imperitive, and specific to the repo. Start minimal and add as needed.
 
-```markdown
-# Agent Instructions
-
-## Purpose
-<One sentence: what this repo is.>
-
-## Conversational Style
-- Short, concise, technical prose
-- No emojis, no filler, no cheerful padding
-- Kind but direct
-
-## Code Quality
-- Ask before removing functionality or code that looks intentional
-- Do not preserve backward compatibility unless asked
-- <Add rules here as they come up in review sessions>
-
-## Commands
-- After code changes, run: <check command>
-- NEVER run: <long-running / destructive commands>
-- If you create or modify a test file, run it and iterate until it passes
-
-## Do not touch
-<Paths the agent should never read or edit. Fill in as issues come up.>
-
-## Git
-- Never `git add -A` or `git add .` — stage specific paths
-- Never commit unless asked
+```bash
+cp AGENTS.md.template AGENTS.md
 ```
-
-The concrete lines matter more than the section headers. If you've corrected
-the agent twice on something, it belongs here — most often under `Code Quality`.
 
 ### 2. Run `/setup-agent-rules` (agent)
 

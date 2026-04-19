@@ -1,0 +1,45 @@
+
+# Development Rules
+
+## Conversational Style
+- Short, concise, technical prose
+- No emojis, no filler, no cheerful padding
+- Kind but direct
+
+## Code Quality
+- Ask before removing functionality or code that looks intentional
+- Do not preserve backward compatibility unless asked
+- <Add rules here as they come up in review sessions>
+
+## Commands
+- After code changes, run: <check command>
+- NEVER run: <long-running / destructive commands>
+- If you create or modify a test file, run it, identify issues in either the test or implementation, and iterate until it passes
+
+## Do not touch
+<Paths the agent should never read or edit. Fill in as issues come up.>
+
+## Git
+- Never `git add -A` or `git add .` — stage specific paths
+- Never commit unless asked
+
+## Changelog
+Location: CHANGELOG.md
+
+### Format
+
+Use these sections under `## [Unreleased]`:
+
+- `### Breaking Changes` - API changes requiring migration
+- `### Added` - New features
+- `### Changed` - Changes to existing functionality
+- `### Fixed` - Bug fixes
+- `### Removed` - Removed features
+
+### Rules
+
+- Before adding entries, read the full `[Unreleased]` section to see which subsections already exist
+- New entries ALWAYS go under `## [Unreleased]` section
+- Append to existing subsections (e.g., `### Fixed`), do not create duplicates
+- NEVER modify already-released version sections (e.g., `## [0.12.2]`)
+- Each version section is immutable once released
