@@ -9,13 +9,13 @@ Built around [pi](https://github.com/badlogic/pi-mono) and modeled loosely on [p
 - [repo-setup.md](./repo-setup.md)
 - [workflows.md](./workflows.md)
 
+## Install
+
+Copy `prompts/` into `~/.pi/agent/prompts/` (global) or your repo's `.pi/prompts/` (per-repo override).
+
 ## How to use
 
-Two independent paths — use either or both.
-
-**Set up a new repo.** Read [repo-setup.md](./repo-setup.md), seed an `AGENTS.md` in your repo using the template there, then run [`/setup-agent-rules`](./prompts/setup-agent-rules.md) in a pi session at the repo root.
-
-**Install the prompts.** Copy `prompts/` into `~/.pi/agent/prompts/` (global) or your repo's `.pi/prompts/` (per-repo override).
+Read [repo-setup.md](./repo-setup.md), seed an `AGENTS.md` in your repo using the template there, then run [`/setup-agent-rules`](./prompts/setup-agent-rules.md) in a pi session at the repo root.
 
 ## Prompts
 
