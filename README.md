@@ -1,4 +1,4 @@
-# agent-repo-guide
+# Agent Ready Repo
 
 A personal template for making repos easy to work in with coding agents, plus the prompts I use to set them up and maintain them.
 
