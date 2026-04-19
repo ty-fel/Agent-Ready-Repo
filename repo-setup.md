@@ -11,7 +11,7 @@ write code against. Most application repos need neither.
 
 ### 1. Seed `AGENTS.md` (human, ~5 min)
 
-Copy the template into `AGENTS.md` and then prune it based on the needs and complexity of your repository. Keep it short, imperitive, and specific to the repo. Start minimal and add as needed.
+Copy the [template](./AGENTS.md.template) into `AGENTS.md` and then prune it based on the needs and complexity of your repository. Keep it short, imperitive, and specific to the repo. Start minimal and add as needed.
 
 ```bash
 cp AGENTS.md.template AGENTS.md
