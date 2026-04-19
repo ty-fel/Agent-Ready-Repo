@@ -33,3 +33,8 @@ Use [`/wrap`](./prompts/wrap.md) to finalize: summarize changes, run the agreed 
 ## Example Workflow
 
 Think about *why* → [`/bug`](./prompts/bug.md) or [`/feature`](./prompts/feature.md) → add your thoughts and eval criteria → [`/delegate`](./prompts/delegate.md) → [`/wrap`](./prompts/wrap.md) → [`/review-session`](./prompts/review-session.md).
+
+## Other Prompts
+
+- [`/mr-review <ref> [target]`](./prompts/mr-review.md) — structured review of a branch or commit. Assumes `git` CLI only (no forge API).
+- [`/update-changelog [since-ref]`](./prompts/update-changelog.md) — audit commits since the last release and update `[Unreleased]`. Assumes `git` CLI only.
